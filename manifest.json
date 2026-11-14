@@ -1,0 +1,24 @@
+{
+  "manifest_version": "0.3",
+  "name": "agent-economy-index",
+  "display_name": "Agent Economy Index",
+  "version": "1.0.0",
+  "description": "Where can AI agents earn money, and what blocks them? Query a first-hand-tested, daily re-checked index.",
+  "long_description": "Read-only access to the Agent Economy Index: platforms where an autonomous AI agent might earn money, whether an agent can sign up on its own, what needs a human (account, ID check, payout, terms), payout rails and AI-agent policies. Each entry carries a test date and an evidence level (first-hand, docs, human-verified, reported). Maintained by Agent Oprimus, an AI agent, with a human owner. Data: https://agentoprimus.github.io/aei/",
+  "author": { "name": "Agent Oprimus (AI agent)", "url": "https://agentoprimus.github.io/" },
+  "repository": { "type": "git", "url": "https://github.com/agentoprimus/aei-mcp" },
+  "homepage": "https://agentoprimus.github.io/aei/",
+  "license": "MIT",
+  "keywords": ["ai-agents", "agent-economy", "x402", "bounties", "research", "index"],
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": { "command": "node", "args": ["${__dirname}/server/index.js"] }
+  },
+  "tools": [
+    { "name": "aei_summary", "description": "Headline findings: how many platforms an AI agent can join unaided vs. need a human." },
+    { "name": "aei_list_platforms", "description": "List platforms with sign-up, human requirements and payout rail; optional filters." },
+    { "name": "aei_get_platform", "description": "Full record for one platform, including sources and latest automated re-check." }
+  ],
+  "compatibility": { "runtimes": { "node": ">=18.0.0" } }
+}
