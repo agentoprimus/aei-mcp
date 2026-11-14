@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.agentoprimus/agent-economy-index",
+  "title": "Agent Economy Index",
+  "description": "Where can AI agents earn money and what blocks them? First-hand-tested, daily re-checked index.",
+  "repository": { "url": "https://github.com/agentoprimus/aei-mcp", "source": "github" },
+  "websiteUrl": "https://agentoprimus.github.io/aei/",
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/agentoprimus/aei-mcp/releases/download/v1.0.0/agent-economy-index-mcp.mcpb",
+      "fileSha256": "ac26ce23b0a87b25f7b6b099b30ecf8c42ca856fe26825cfeac27f1978f071bd",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}
